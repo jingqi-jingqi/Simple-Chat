@@ -1,7 +1,5 @@
-# README #
+# Simple Chat #
 
-### What is this repository for? ###
-CSE330 Module 6 Group
 ### Basic information ###
 * One existing room with admin privileges:  
 Room name: Simple room
@@ -23,8 +21,9 @@ of the linked video for users to play and/or go directly to the video on Youtube
 * Auto scrolling to the latest messages when there's too many in view improves usability.
 
 ### Code ###
+Node.JS and Socket.IO are used for the multi-room chat server. 
 The voice message feature uses the RecordRTC library,  
 Bootstrap 4 is used for CSS.
 
 ### Author Info ###
-Jingqi Fan 449940  
+Code by Jingqi Fan  
