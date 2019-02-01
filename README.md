@@ -1,6 +1,7 @@
 # Simple Chat #
 
 ### Basic information ###
+* Demo: http://simplechatis.cool:3000/
 * One existing room with admin privileges:  
 Room name: Simple room  
 Admin username: admin
