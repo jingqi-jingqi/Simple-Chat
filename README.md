@@ -2,7 +2,7 @@
 
 ### Basic information ###
 * One existing room with admin privileges:  
-Room name: Simple room
+Room name: Simple room  
 Admin username: admin
 ### Basic navigation ###
 Username of admin will enable user priveleges to ban and kick users in Simple room.  
