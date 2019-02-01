@@ -1,0 +1,68 @@
+body {
+  margin: 10vh 10vw;
+}  
+#messageArea{
+   display: none;
+}
+
+#chatArea.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-top: .5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.kick {
+  margin-top: 0;
+}
+.ban {
+  margin-top: 0;
+}
+
+.col-xs-4 {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-md-8 {
+  display: inline-block;
+}
+
+audio {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.audioStrongTag {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#chat {
+  overflow-y: scroll;
+  max-height: 45vh;
+}
+
+#dmChat {
+  overflow-y: scroll;
+  max-height: 30vh;
+}
+
+.videoDiv {
+  webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width:500px;
+  height: 281.25px;
+  margin:10px 0 0 0;
+  overflow:hidden;
+}

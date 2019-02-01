@@ -1,0 +1,14 @@
+{
+  "name": "module-6",
+  "version": "1.0.0",
+  "description": "Simple multi-room chat server",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "author": "Jingqi Fan",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "*",
+    "express": "*"
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Simple Chat</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="//www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <script src="/client.js"></script>
+  
+</head>
+<body>
+    <div id="userFormArea" class="row">
+      <div class="col-md-12">
+        <form id="userForm">
+          <div class="form-group">
+            <label>Enter Username</label>
+            <input class="form-control" id="username" />
+            <input type="submit" class="btn btn-primary" value="Login" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="messageArea" class="row">
+      <div class="col-xs-4" style="display: inline-block">
+        <div class="card">
+          <div class="card-body">
+            <div id="currentLoggedInUser"></div>
+            <div id="currentEnteredRoom"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header">Online Users</h5>
+          <ul class="list-group list-group list-group-flush" id="users-list"></ul>
+        </div>
+        <div class="card">
+          <h5 class="card-header">Availiable Rooms</h5>
+          <ul id="room-list" class="list-group list-group-flush"></ul>
+          <div class="card-body">
+            <div id="roomForm">
+              <div class="form-group">
+                <label for="roomName">Create new room</label>
+                <input class="form-control" id="roomName" placeholder="Please enter a room name"/>
+                <label for="password">Room password</label>
+                <input class="form-control" type="password" id="password" placeholder="Please enter a password"/>
+                <small id="roomHelp" class="form-text text-muted">Optional</small>
+                <input type="submit" class="btn btn-outline-primary btn-sm" id="publicRoom" value="Create Room" />
+                <input type="submit" class="btn btn-outline-primary btn-sm" id="privateRoom" value="Create Room with Password" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 disabled" id = "chatArea" style="display: inline-block">
+        <div class="chat" id="chat"></div>
+        <form id="messageForm">
+          <div class="form-group">
+            <label for="chat-message">Enter message</label>
+            <textarea class="form-control" id="chat-message"></textarea>
+            <input type="submit" class="btn btn-primary" value="Send Message" />
+            <div class="btn btn-secondary" id="record">Record Message</div>
+          </div>
+        </form>
+        <div class="dmChat" id="dmChat"></div>
+        <form id="dmForm">
+          <div class="form-group">
+            <label for="roomName">Enter username for DM:</label>
+            <select class="form-control" id="dmUsername"></select>
+            <label>Enter message</label>
+            <textarea class="form-control" id="dm-message"></textarea>
+            <input type="submit" class="btn btn-primary" value="Send Message" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>
